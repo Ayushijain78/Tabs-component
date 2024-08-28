@@ -1,38 +1,47 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tabs-ontainer{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background-color: rgb(227, 227, 202);
+}
+.tab-panel{
+  background-color: lightblue;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+.tab{
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: rgb(31, 235, 116);
+  color: #000;
+  border-radius: 30px;
+  padding: 8px 20px;
+  border: 1px solid black;
+  border-top-right-radius: 0;
+}
+.active-tab{
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tab-left{ 
+  justify-content: flex-start;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tab-container .tab-left .tab{
+  width: 20px;
+}
+.tab-right{
+  justify-content: flex-end;
+  gap: 20px;
+}
+.disabled-tab{
+  pointer-events: none;
+  background-color: grey;
 }
